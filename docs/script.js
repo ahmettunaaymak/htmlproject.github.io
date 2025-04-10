@@ -243,6 +243,7 @@ function endGame(){
     let finalText = document.getElementById('result');
     finalText.style.fontSize = '50px';
     finalText.innerHTML = 'Game Over! Score: ' + finalscore;
+    document.getElementById('bitir').style.display = "block"
     finalText.style.position = 'absolute';
     finalText.style.left = '40%';
     

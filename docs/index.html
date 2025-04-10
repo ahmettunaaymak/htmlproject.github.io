@@ -53,6 +53,25 @@
             
             
         }
+
+        .refresh-button {
+            position: absolute;
+            top: 55%;  /* Adjust this value to move the button lower or higher */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .refresh-button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +80,7 @@
     <div id="egg"></div>
     <div id="character"></div>
     <div id="nest"></div>
+    <button class="refresh-button" onclick="window.location.reload();">Restart</button>
    
     
     <script src="script.js">

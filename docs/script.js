@@ -152,8 +152,8 @@ function spawnNewEgg() {
     
     let newX, newY;
     do {
-        newX = Math.floor(Math.random() * (window.innerWidth - 150));
-        newY = Math.floor(Math.random() * (window.innerHeight - 150));
+        newX = Math.floor(Math.random() * (window.innerWidth - 250));
+        newY = Math.floor(Math.random() * (window.innerHeight - 250));
     } while (Math.abs(newX - 1000) < 200 && Math.abs(newY - 100) < 200); 
 
     egg.style.left = newX + "px";

@@ -31,8 +31,8 @@
             if (caught) return;
             eggX += dx;
             eggY += dy;
-            let maxX = window.innerWidth - egg.clientWidth - 10;
-            let maxY = window.innerHeight - egg.clientHeight - 10;
+            let maxX = window.innerWidth - egg.clientWidth - 40;
+            let maxY = window.innerHeight - egg.clientHeight - 40;
             if (eggX <= 10 || eggX >= maxX) dx = -dx;
             if (eggY <= 10 || eggY >= maxY) dy = -dy;
             egg.style.left = eggX + "px";
